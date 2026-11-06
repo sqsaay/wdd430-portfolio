@@ -1,3 +1,5 @@
+import AboutHighlight from "@/components/AboutHighlight";
+
 export default function About() {
   return (
     <main className="site-main">
@@ -10,13 +12,14 @@ export default function About() {
         </p>
       </section>
 
-      <section className="about-section" aria-labelledby="learning-heading">
-        <h2 id="learning-heading">What I&apos;m learning</h2>
-        <p>
-          I&apos;m currently learning React and exploring how to create
-          interactive user experiences.
-        </p>
-      </section>
+      <AboutHighlight
+        typeface={{
+          title: "React and interactive experiences",
+          description:
+            "I’m currently learning React and exploring how to create interactive user experiences.",
+          skills: ["React", "JavaScript", "UI development"],
+        }}
+      />
 
       <section className="about-section" aria-labelledby="experience-heading">
         <h2 id="experience-heading">What I&apos;ve worked with</h2>
